@@ -1,0 +1,9 @@
+
+
+mount -t proc none /proc
+mount -t sysfs none /sys
+mount -t tmpfs none /tmp
+mount -t ramfs none /dev
+mdev -s
+ syslogd 
+ echo /sbin/mdev > /proc/sys/kernel/hotplug
